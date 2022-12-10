@@ -1,5 +1,5 @@
-import express from 'express';
-import request from 'request';
+const express = require('express');
+const request = require('request');
 
 const app = express();
 const API_URL = 'https://urlphishingdetector.onrender.com' // Replace this URL with your own
@@ -22,5 +22,5 @@ app.post('/api', (req, res) => {
   );
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
